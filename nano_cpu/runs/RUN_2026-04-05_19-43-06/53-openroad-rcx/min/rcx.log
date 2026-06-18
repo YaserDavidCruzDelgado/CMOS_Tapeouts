@@ -1,0 +1,41 @@
+Reading technology LEF file at '/home/yaser/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef'…
+[INFO ODB-0227] LEF file: /home/yaser/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef, created 14 layers, 25 vias
+Reading cell LEF file at '/home/yaser/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef'…
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/yaser/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/yaser/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+Reading cell LEF file at '/home/yaser/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef'…
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/yaser/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/yaser/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef, created 4 library cells
+[INFO ODB-0127] Reading DEF file: /home/yaser/CMOS_Tapeouts/nano_cpu/runs/RUN_2026-04-05_19-43-06/52-odb-cellfrequencytables/nano_cpu.def
+[INFO ODB-0128] Design: nano_cpu
+[INFO ODB-0130]     Created 28 pins.
+[INFO ODB-0131]     Created 627 components and 3151 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 2404 connections.
+[INFO ODB-0133]     Created 252 nets and 746 connections.
+[INFO ODB-0134] Finished DEF file: /home/yaser/CMOS_Tapeouts/nano_cpu/runs/RUN_2026-04-05_19-43-06/52-odb-cellfrequencytables/nano_cpu.def
+Using RCX ruleset '/home/yaser/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/rules.openrcx.sky130A.min.calibre'…
+[INFO RCX-0431] Defined process_corner CURRENT_CORNER with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner CURRENT_CORNER
+[INFO RCX-0435] Reading extraction model file /home/yaser/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/rules.openrcx.sky130A.min.calibre ...
+[INFO RCX-0436] RC segment generation nano_cpu (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 787 rc segments
+[INFO RCX-0439] Coupling Cap extraction nano_cpu ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0442] 53% of 1390 wires extracted
+[INFO RCX-0442] 100% of 1390 wires extracted
+[INFO RCX-0045] Extract 252 nets, 1039 rsegs, 1039 caps, 1414 ccs
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                               322    2197.11
+  Tap cell                                 52      65.06
+  Antenna cell                             10      25.02
+  Standard cell                           243    1976.90
+  Total                                   627    4264.09
+Writing extracted parasitics to '/home/yaser/CMOS_Tapeouts/nano_cpu/runs/RUN_2026-04-05_19-43-06/53-openroad-rcx/min/nano_cpu.min.spef'…
+[INFO RCX-0443] 252 nets finished

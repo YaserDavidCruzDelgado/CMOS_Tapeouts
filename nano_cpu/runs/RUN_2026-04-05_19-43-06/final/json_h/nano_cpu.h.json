@@ -1,0 +1,1202 @@
+{
+  "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+  "modules": {
+    "nano_cpu": {
+      "attributes": {
+        "hdlname": "nano_cpu",
+        "top": "00000000000000000000000000000001",
+        "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:3.1-60.10"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "reset": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "instruction": {
+          "direction": "input",
+          "bits": [ 4, 5, 6, 7, 8, 9, 10, 11 ]
+        },
+        "pc": {
+          "direction": "output",
+          "bits": [ 12, 13, 14, 15, 16, 17, 18, 19 ]
+        },
+        "out_port": {
+          "direction": "output",
+          "bits": [ 20, 21, 22, 23, 24, 25, 26, 27 ]
+        }
+      },
+      "cells": {
+        "$add$/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:44$2": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000100000",
+            "Y_WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:44.36-44.42"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12, 13, 14, 15, 16, 17, 18, 19 ],
+            "B": [ "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "Y": [ 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59 ]
+          }
+        },
+        "$add$/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:45$3": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000100000",
+            "Y_WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:45.68-45.74"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12, 13, 14, 15, 16, 17, 18, 19 ],
+            "B": [ "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "Y": [ 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91 ]
+          }
+        },
+        "$add$/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:46$4": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000001000",
+            "Y_WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:46.43-46.66"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 92, 93, 94, 95, 96, 97, 98, 99 ],
+            "B": [ 4, 5, 6, 7, 8, "0", "0", "0" ],
+            "Y": [ 100, 101, 102, 103, 104, 105, 106, 107 ]
+          }
+        },
+        "$add$/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:46$5": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000100000",
+            "Y_WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:46.74-46.80"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12, 13, 14, 15, 16, 17, 18, 19 ],
+            "B": [ "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "Y": [ 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139 ]
+          }
+        },
+        "$add$/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:47$7": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000100000",
+            "Y_WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:47.74-47.80"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12, 13, 14, 15, 16, 17, 18, 19 ],
+            "B": [ "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "Y": [ 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171 ]
+          }
+        },
+        "$add$/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:49$9": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000100000",
+            "Y_WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:49.80-49.86"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12, 13, 14, 15, 16, 17, 18, 19 ],
+            "B": [ "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "Y": [ 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203 ]
+          }
+        },
+        "$add$/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:50$10": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000100000",
+            "Y_WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:50.59-50.65"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12, 13, 14, 15, 16, 17, 18, 19 ],
+            "B": [ "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "Y": [ 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235 ]
+          }
+        },
+        "$eq$/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:49$8": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:49.34-49.42"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 92, 93, 94, 95, 96, 97, 98, 99 ],
+            "Y": [ 236 ]
+          }
+        },
+        "$procdff$56": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:28.5-58.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 237, 238, 239, 240, 241, 242, 243, 244 ],
+            "Q": [ 12, 13, 14, 15, 16, 17, 18, 19 ]
+          }
+        },
+        "$procdff$57": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:28.5-58.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 245, 246, 247, 248, 249, 250, 251, 252 ],
+            "Q": [ 20, 21, 22, 23, 24, 25, 26, 27 ]
+          }
+        },
+        "$procdff$58": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:28.5-58.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 253, 254, 255, 256, 257, 258, 259, 260 ],
+            "Q": [ 92, 93, 94, 95, 96, 97, 98, 99 ]
+          }
+        },
+        "$procdff$59": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:28.5-58.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 261 ],
+            "Q": [ 262 ]
+          }
+        },
+        "$procmux$12": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000010",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:0.0-0.0|/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:35.13-56.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ "0", "1" ],
+            "S": [ 262, 263 ],
+            "Y": [ 264 ]
+          }
+        },
+        "$procmux$14_CMP0": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:0.0-0.0|/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:35.13-56.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 262 ],
+            "Y": [ 263 ]
+          }
+        },
+        "$procmux$16": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:29.13-29.18|/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:29.9-57.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 264 ],
+            "B": [ "0" ],
+            "S": [ 3 ],
+            "Y": [ 261 ]
+          }
+        },
+        "$procmux$22": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000011",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:0.0-0.0|/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:43.21-53.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 92, 93, 94, 95, 96, 97, 98, 99 ],
+            "B": [ 265, 266, 267, 268, 269, 270, 271, 272, 100, 101, 102, 103, 104, 105, 106, 107, 4, 5, 6, 7, 8, "0", "0", "0" ],
+            "S": [ 273, 274, 275 ],
+            "Y": [ 276, 277, 278, 279, 280, 281, 282, 283 ]
+          }
+        },
+        "$procmux$23_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:0.0-0.0|/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:43.21-53.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 10, 11 ],
+            "B": [ "1", "1", "0" ],
+            "Y": [ 273 ]
+          }
+        },
+        "$procmux$24_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:0.0-0.0|/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:43.21-53.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 10, 11 ],
+            "B": [ "0", "1", "0" ],
+            "Y": [ 274 ]
+          }
+        },
+        "$procmux$25_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:0.0-0.0|/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:43.21-53.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 10, 11 ],
+            "B": [ "1", "0", "0" ],
+            "Y": [ 275 ]
+          }
+        },
+        "$procmux$26": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:0.0-0.0|/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:35.13-56.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 92, 93, 94, 95, 96, 97, 98, 99 ],
+            "B": [ 276, 277, 278, 279, 280, 281, 282, 283 ],
+            "S": [ 262 ],
+            "Y": [ 284, 285, 286, 287, 288, 289, 290, 291 ]
+          }
+        },
+        "$procmux$29": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:29.13-29.18|/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:29.9-57.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 284, 285, 286, 287, 288, 289, 290, 291 ],
+            "B": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "S": [ 3 ],
+            "Y": [ 253, 254, 255, 256, 257, 258, 259, 260 ]
+          }
+        },
+        "$procmux$32": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:0.0-0.0|/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:43.21-53.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 20, 21, 22, 23, 24, 25, 26, 27 ],
+            "B": [ 92, 93, 94, 95, 96, 97, 98, 99 ],
+            "S": [ 292 ],
+            "Y": [ 293, 294, 295, 296, 297, 298, 299, 300 ]
+          }
+        },
+        "$procmux$33_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:0.0-0.0|/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:43.21-53.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 10, 11 ],
+            "B": [ "0", "1", "1" ],
+            "Y": [ 292 ]
+          }
+        },
+        "$procmux$34": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:0.0-0.0|/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:35.13-56.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 20, 21, 22, 23, 24, 25, 26, 27 ],
+            "B": [ 293, 294, 295, 296, 297, 298, 299, 300 ],
+            "S": [ 262 ],
+            "Y": [ 301, 302, 303, 304, 305, 306, 307, 308 ]
+          }
+        },
+        "$procmux$37": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:29.13-29.18|/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:29.9-57.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 301, 302, 303, 304, 305, 306, 307, 308 ],
+            "B": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "S": [ 3 ],
+            "Y": [ 245, 246, 247, 248, 249, 250, 251, 252 ]
+          }
+        },
+        "$procmux$39": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000001000",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:0.0-0.0|/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:43.21-53.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x", "x", "x", "x", "x", "x", "x", "x" ],
+            "B": [ 12, 13, 14, 15, 16, 17, 18, 19, 204, 205, 206, 207, 208, 209, 210, 211, 309, 310, 311, 312, 313, 314, 315, 316, 4, 5, 6, 7, 8, "0", "0", "0", 140, 141, 142, 143, 144, 145, 146, 147, 108, 109, 110, 111, 112, 113, 114, 115, 60, 61, 62, 63, 64, 65, 66, 67, 28, 29, 30, 31, 32, 33, 34, 35 ],
+            "S": [ 317, 318, 319, 320, 321, 322, 323, 324 ],
+            "Y": [ 325, 326, 327, 328, 329, 330, 331, 332 ]
+          }
+        },
+        "$procmux$40_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:0.0-0.0|/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:43.21-53.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 10, 11 ],
+            "B": [ "1", "1", "1" ],
+            "Y": [ 317 ]
+          }
+        },
+        "$procmux$41_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:0.0-0.0|/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:43.21-53.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 10, 11 ],
+            "B": [ "0", "1", "1" ],
+            "Y": [ 318 ]
+          }
+        },
+        "$procmux$43": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:49.34-49.42|/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:49.30-49.87"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 172, 173, 174, 175, 176, 177, 178, 179 ],
+            "B": [ 4, 5, 6, 7, 8, "0", "0", "0" ],
+            "S": [ 236 ],
+            "Y": [ 309, 310, 311, 312, 313, 314, 315, 316 ]
+          }
+        },
+        "$procmux$45_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:0.0-0.0|/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:43.21-53.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 10, 11 ],
+            "B": [ "1", "0", "1" ],
+            "Y": [ 319 ]
+          }
+        },
+        "$procmux$46_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:0.0-0.0|/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:43.21-53.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 10, 11 ],
+            "B": [ "0", "0", "1" ],
+            "Y": [ 320 ]
+          }
+        },
+        "$procmux$47_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:0.0-0.0|/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:43.21-53.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 10, 11 ],
+            "B": [ "1", "1", "0" ],
+            "Y": [ 321 ]
+          }
+        },
+        "$procmux$48_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:0.0-0.0|/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:43.21-53.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 10, 11 ],
+            "B": [ "0", "1", "0" ],
+            "Y": [ 322 ]
+          }
+        },
+        "$procmux$49_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:0.0-0.0|/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:43.21-53.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 10, 11 ],
+            "B": [ "1", "0", "0" ],
+            "Y": [ 323 ]
+          }
+        },
+        "$procmux$50_CMP0": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:0.0-0.0|/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:43.21-53.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 10, 11 ],
+            "Y": [ 324 ]
+          }
+        },
+        "$procmux$51": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:0.0-0.0|/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:35.13-56.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12, 13, 14, 15, 16, 17, 18, 19 ],
+            "B": [ 325, 326, 327, 328, 329, 330, 331, 332 ],
+            "S": [ 262 ],
+            "Y": [ 333, 334, 335, 336, 337, 338, 339, 340 ]
+          }
+        },
+        "$procmux$54": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:29.13-29.18|/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:29.9-57.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 333, 334, 335, 336, 337, 338, 339, 340 ],
+            "B": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "S": [ 3 ],
+            "Y": [ 237, 238, 239, 240, 241, 242, 243, 244 ]
+          }
+        },
+        "$sub$/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:47$6": {
+          "hide_name": 1,
+          "type": "$sub",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000001000",
+            "Y_WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:47.43-47.66"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 92, 93, 94, 95, 96, 97, 98, 99 ],
+            "B": [ 4, 5, 6, 7, 8, "0", "0", "0" ],
+            "Y": [ 265, 266, 267, 268, 269, 270, 271, 272 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\acc[7:0]": {
+          "hide_name": 1,
+          "bits": [ 253, 254, 255, 256, 257, 258, 259, 260 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:28.5-58.8"
+          }
+        },
+        "$0\\out_port[7:0]": {
+          "hide_name": 1,
+          "bits": [ 245, 246, 247, 248, 249, 250, 251, 252 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:28.5-58.8"
+          }
+        },
+        "$0\\pc[7:0]": {
+          "hide_name": 1,
+          "bits": [ 237, 238, 239, 240, 241, 242, 243, 244 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:28.5-58.8"
+          }
+        },
+        "$0\\state[0:0]": {
+          "hide_name": 1,
+          "bits": [ 261 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:28.5-58.8"
+          }
+        },
+        "$add$/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:44$2_Y": {
+          "hide_name": 1,
+          "bits": [ 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:44.36-44.42",
+            "unused_bits": "8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31"
+          }
+        },
+        "$add$/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:45$3_Y": {
+          "hide_name": 1,
+          "bits": [ 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:45.68-45.74",
+            "unused_bits": "8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31"
+          }
+        },
+        "$add$/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:46$4_Y": {
+          "hide_name": 1,
+          "bits": [ 100, 101, 102, 103, 104, 105, 106, 107 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:46.43-46.66"
+          }
+        },
+        "$add$/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:46$5_Y": {
+          "hide_name": 1,
+          "bits": [ 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:46.74-46.80",
+            "unused_bits": "8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31"
+          }
+        },
+        "$add$/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:47$7_Y": {
+          "hide_name": 1,
+          "bits": [ 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:47.74-47.80",
+            "unused_bits": "8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31"
+          }
+        },
+        "$add$/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:49$9_Y": {
+          "hide_name": 1,
+          "bits": [ 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:49.80-49.86",
+            "unused_bits": "8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31"
+          }
+        },
+        "$add$/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:50$10_Y": {
+          "hide_name": 1,
+          "bits": [ 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:50.59-50.65",
+            "unused_bits": "8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31"
+          }
+        },
+        "$eq$/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:49$8_Y": {
+          "hide_name": 1,
+          "bits": [ 236 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:49.34-49.42"
+          }
+        },
+        "$procmux$12_Y": {
+          "hide_name": 1,
+          "bits": [ 264 ],
+          "attributes": {
+          }
+        },
+        "$procmux$14_CMP": {
+          "hide_name": 1,
+          "bits": [ 263 ],
+          "attributes": {
+          }
+        },
+        "$procmux$22_Y": {
+          "hide_name": 1,
+          "bits": [ 276, 277, 278, 279, 280, 281, 282, 283 ],
+          "attributes": {
+          }
+        },
+        "$procmux$23_CMP": {
+          "hide_name": 1,
+          "bits": [ 273 ],
+          "attributes": {
+          }
+        },
+        "$procmux$24_CMP": {
+          "hide_name": 1,
+          "bits": [ 274 ],
+          "attributes": {
+          }
+        },
+        "$procmux$25_CMP": {
+          "hide_name": 1,
+          "bits": [ 275 ],
+          "attributes": {
+          }
+        },
+        "$procmux$26_Y": {
+          "hide_name": 1,
+          "bits": [ 284, 285, 286, 287, 288, 289, 290, 291 ],
+          "attributes": {
+          }
+        },
+        "$procmux$32_Y": {
+          "hide_name": 1,
+          "bits": [ 293, 294, 295, 296, 297, 298, 299, 300 ],
+          "attributes": {
+          }
+        },
+        "$procmux$33_CMP": {
+          "hide_name": 1,
+          "bits": [ 292 ],
+          "attributes": {
+          }
+        },
+        "$procmux$34_Y": {
+          "hide_name": 1,
+          "bits": [ 301, 302, 303, 304, 305, 306, 307, 308 ],
+          "attributes": {
+          }
+        },
+        "$procmux$39_Y": {
+          "hide_name": 1,
+          "bits": [ 325, 326, 327, 328, 329, 330, 331, 332 ],
+          "attributes": {
+          }
+        },
+        "$procmux$40_CMP": {
+          "hide_name": 1,
+          "bits": [ 317 ],
+          "attributes": {
+          }
+        },
+        "$procmux$41_CMP": {
+          "hide_name": 1,
+          "bits": [ 318 ],
+          "attributes": {
+          }
+        },
+        "$procmux$43_Y": {
+          "hide_name": 1,
+          "bits": [ 309, 310, 311, 312, 313, 314, 315, 316 ],
+          "attributes": {
+          }
+        },
+        "$procmux$45_CMP": {
+          "hide_name": 1,
+          "bits": [ 319 ],
+          "attributes": {
+          }
+        },
+        "$procmux$46_CMP": {
+          "hide_name": 1,
+          "bits": [ 320 ],
+          "attributes": {
+          }
+        },
+        "$procmux$47_CMP": {
+          "hide_name": 1,
+          "bits": [ 321 ],
+          "attributes": {
+          }
+        },
+        "$procmux$48_CMP": {
+          "hide_name": 1,
+          "bits": [ 322 ],
+          "attributes": {
+          }
+        },
+        "$procmux$49_CMP": {
+          "hide_name": 1,
+          "bits": [ 323 ],
+          "attributes": {
+          }
+        },
+        "$procmux$50_CMP": {
+          "hide_name": 1,
+          "bits": [ 324 ],
+          "attributes": {
+          }
+        },
+        "$procmux$51_Y": {
+          "hide_name": 1,
+          "bits": [ 333, 334, 335, 336, 337, 338, 339, 340 ],
+          "attributes": {
+          }
+        },
+        "$sub$/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:47$6_Y": {
+          "hide_name": 1,
+          "bits": [ 265, 266, 267, 268, 269, 270, 271, 272 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:47.43-47.66"
+          }
+        },
+        "acc": {
+          "hide_name": 0,
+          "bits": [ 92, 93, 94, 95, 96, 97, 98, 99 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:12.15-12.18"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:4.23-4.26"
+          }
+        },
+        "instruction": {
+          "hide_name": 0,
+          "bits": [ 4, 5, 6, 7, 8, 9, 10, 11 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:6.23-6.34"
+          }
+        },
+        "out_port": {
+          "hide_name": 0,
+          "bits": [ 20, 21, 22, 23, 24, 25, 26, 27 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:8.23-8.31"
+          }
+        },
+        "pc": {
+          "hide_name": 0,
+          "bits": [ 12, 13, 14, 15, 16, 17, 18, 19 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:7.23-7.25"
+          }
+        },
+        "reset": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:5.23-5.28"
+          }
+        },
+        "state": {
+          "hide_name": 0,
+          "bits": [ 262 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/nano_cpu/src/nano_cpu.v:13.15-13.20"
+          }
+        }
+      }
+    }
+  }
+}

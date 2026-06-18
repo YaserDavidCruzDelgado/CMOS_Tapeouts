@@ -1,0 +1,59 @@
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/yaser/CMOS_Tapeouts/nano_cpu/runs/RUN_2026-04-05_19-43-06/tmp/3fd336c869b34c68885cfebc1fdf33da.lib ",
+   "modules": {
+      "\\nano_cpu": {
+         "num_wires":         153,
+         "num_wire_bits":     188,
+         "num_pub_wires":     7,
+         "num_pub_wire_bits": 35,
+         "num_ports":         5,
+         "num_port_bits":     26,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         178,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 47,
+            "$_AND_": 2,
+            "$_MUX_": 20,
+            "$_NAND_": 9,
+            "$_NOR_": 12,
+            "$_NOT_": 11,
+            "$_ORNOT_": 4,
+            "$_OR_": 22,
+            "$_SDFFE_PP0P_": 24,
+            "$_SDFF_PP0_": 1,
+            "$_XNOR_": 11,
+            "$_XOR_": 15
+         }
+      }
+   },
+      "design": {
+         "num_wires":         153,
+         "num_wire_bits":     188,
+         "num_pub_wires":     7,
+         "num_pub_wire_bits": 35,
+         "num_ports":         5,
+         "num_port_bits":     26,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         178,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 47,
+            "$_AND_": 2,
+            "$_MUX_": 20,
+            "$_NAND_": 9,
+            "$_NOR_": 12,
+            "$_NOT_": 11,
+            "$_ORNOT_": 4,
+            "$_OR_": 22,
+            "$_SDFFE_PP0P_": 24,
+            "$_SDFF_PP0_": 1,
+            "$_XNOR_": 11,
+            "$_XOR_": 15
+         }
+      }
+}
+
