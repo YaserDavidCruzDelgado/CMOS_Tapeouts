@@ -1,0 +1,11 @@
+- cell: clb
+  inout: []
+  input:
+  - I[0]
+  - I[1]
+  - I[2]
+  - clk
+  - ff_en
+  - rst
+  output:
+  - O

@@ -1,0 +1,143 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO clb
+  CLASS BLOCK ;
+  FOREIGN clb ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 65.000 BY 65.000 ;
+  PIN I[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0.090 0.000 0.370 4.000 ;
+    END
+  END I[0]
+  PIN I[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 3.310 0.000 3.590 4.000 ;
+    END
+  END I[1]
+  PIN I[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 6.530 0.000 6.810 4.000 ;
+    END
+  END I[2]
+  PIN I[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.631200 ;
+    ANTENNADIFFAREA 0.434700 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 34.040 4.000 34.640 ;
+    END
+  END I[3]
+  PIN O
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 35.510 0.000 35.790 4.000 ;
+    END
+  END O
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 12.670 10.640 13.570 51.920 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 42.670 10.640 43.570 51.920 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 10.070 10.640 10.970 51.920 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 40.070 10.640 40.970 51.920 ;
+    END
+  END VPWR
+  PIN cin
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.631200 ;
+    ANTENNADIFFAREA 0.434700 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 30.640 4.000 31.240 ;
+    END
+  END cin
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 9.750 0.000 10.030 4.000 ;
+    END
+  END clk
+  PIN cout
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met2 ;
+        RECT 32.290 0.000 32.570 4.000 ;
+    END
+  END cout
+  PIN ff_en
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 12.970 0.000 13.250 4.000 ;
+    END
+  END ff_en
+  PIN rst
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 16.190 0.000 16.470 4.000 ;
+    END
+  END rst
+  OBS
+      LAYER nwell ;
+        RECT 5.330 10.795 59.530 51.870 ;
+      LAYER li1 ;
+        RECT 5.520 10.795 59.340 51.765 ;
+      LAYER met1 ;
+        RECT 5.520 10.640 59.340 51.920 ;
+      LAYER met2 ;
+        RECT 6.530 4.280 43.460 51.865 ;
+        RECT 7.090 4.000 9.470 4.280 ;
+        RECT 10.310 4.000 12.690 4.280 ;
+        RECT 13.530 4.000 15.910 4.280 ;
+        RECT 16.750 4.000 32.010 4.280 ;
+        RECT 32.850 4.000 35.230 4.280 ;
+        RECT 36.070 4.000 43.460 4.280 ;
+      LAYER met3 ;
+        RECT 4.000 35.040 43.510 51.845 ;
+        RECT 4.400 33.640 43.510 35.040 ;
+        RECT 4.000 31.640 43.510 33.640 ;
+        RECT 4.400 30.240 43.510 31.640 ;
+        RECT 4.000 10.715 43.510 30.240 ;
+  END
+END clb
+END LIBRARY
+

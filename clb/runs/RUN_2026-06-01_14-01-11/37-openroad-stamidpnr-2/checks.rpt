@@ -1,0 +1,87 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= nom_tt_025C_1v80 Corner ===================================
+
+Startpoint: cin (input port clocked by clk)
+Endpoint: cout (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock network delay (propagated)
+                                  2.000000    2.000000 ^ input external delay
+     1    0.002672    0.019868    0.009845    2.009845 ^ cin (in)
+                                                         cin (net)
+                      0.019868    0.000000    2.009845 ^ input2/A (sky130_fd_sc_hd__clkbuf_1)
+     1    0.001799    0.034419    0.063607    2.073452 ^ input2/X (sky130_fd_sc_hd__clkbuf_1)
+                                                         net2 (net)
+                      0.034419    0.000002    2.073454 ^ _0_/B (sky130_fd_sc_hd__and2_1)
+     1    0.005122    0.065799    0.127858    2.201312 ^ _0_/X (sky130_fd_sc_hd__and2_1)
+                                                         net3 (net)
+                      0.065799    0.000061    2.201373 ^ output3/A (sky130_fd_sc_hd__buf_2)
+     1    0.034344    0.170529    0.206330    2.407703 ^ output3/X (sky130_fd_sc_hd__buf_2)
+                                                         cout (net)
+                      0.170529    0.000197    2.407900 ^ cout (out)
+                                              2.407900   data arrival time
+
+                                 10.000000   10.000000   clock clk (rise edge)
+                                  0.000000   10.000000   clock network delay (propagated)
+                                 -0.250000    9.750000   clock uncertainty
+                                  0.000000    9.750000   clock reconvergence pessimism
+                                 -2.000000    7.750000   output external delay
+                                              7.750000   data required time
+---------------------------------------------------------------------------------------------
+                                              7.750000   data required time
+                                             -2.407900   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.342100   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= nom_tt_025C_1v80 Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= nom_tt_025C_1v80 Corner ===================================
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 7 unannotated drivers.
+ I[0]
+ I[1]
+ I[2]
+ clk
+ ff_en
+ rst
+ clb_4/HI
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+Writing metric design__max_slew_violation__count__corner:nom_tt_025C_1v80: 0
+max fanout violation count 0
+Writing metric design__max_fanout_violation__count__corner:nom_tt_025C_1v80: 0
+max cap violation count 0
+Writing metric design__max_cap_violation__count__corner:nom_tt_025C_1v80: 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There is 1 unconstrained endpoint.
+  O

@@ -1,0 +1,79 @@
+Reading OpenROAD database at '/home/yaser/CMOS_Tapeouts/clb/runs/RUN_2026-06-01_14-01-11/24-openroad-ioplacement/clb.odb'…
+Reading library file at '/home/yaser/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading design constraints file at '/nix/store/ss2cw3sxbrwwx9jl0rrppbw4kgcmgi2n-python3-3.11.9-env/lib/python3.11/site-packages/openlane/scripts/base.sdc'…
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 2.0
+[INFO] Setting input delay to: 2.0
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[INFO] Setting timing derate to: 5%
+[INFO] Setting RC values…
+[INFO] Setting signal min routing layer to: met1 and clock min routing layer to met1. 
+[INFO] Setting signal max routing layer to: met5 and clock max routing layer to met5. 
++ global_placement -density 0.45 -timing_driven -routability_driven -pad_right 0 -pad_left 0 -init_wirelength_coef 0.25
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.460  2.720 ) um
+[INFO GPL-0004] CoreBBox: (  5.520 10.880 ) ( 59.340 51.680 ) um
+[INFO GPL-0006] NumInstances:                66
+[INFO GPL-0007] NumPlaceInstances:            2
+[INFO GPL-0008] NumFixedInstances:           64
+[INFO GPL-0009] NumDummyInstances:            0
+[INFO GPL-0010] NumNets:                     10
+[INFO GPL-0011] NumPins:                     14
+[INFO GPL-0012] DieBBox:  (  0.000  0.000 ) ( 65.000 65.000 ) um
+[INFO GPL-0013] CoreBBox: (  5.520 10.880 ) ( 59.340 51.680 ) um
+[INFO GPL-0016] CoreArea:              2195.856 um^2
+[INFO GPL-0017] NonPlaceInstsArea:      155.149 um^2
+[INFO GPL-0018] PlaceInstsArea:          11.261 um^2
+[INFO GPL-0019] Util:                     0.552 %
+[INFO GPL-0020] StdInstsArea:            11.261 um^2
+[INFO GPL-0021] MacroInstsArea:           0.000 um^2
+[InitialPlace]  Iter: 1 CG residual: 0.00000000 HPWL: 171522
+[InitialPlace]  Iter: 2 CG residual: 0.00000006 HPWL: 137045
+[InitialPlace]  Iter: 3 CG residual: 0.00000000 HPWL: 134817
+[InitialPlace]  Iter: 4 CG residual: 0.00000000 HPWL: 131320
+[InitialPlace]  Iter: 5 CG residual: 0.00000000 HPWL: 126664
+[INFO GPL-0031] FillerInit:NumGCells:       243
+[INFO GPL-0032] FillerInit:NumGNets:         10
+[INFO GPL-0033] FillerInit:NumGPins:         14
+[INFO GPL-0023] TargetDensity:            0.450
+[INFO GPL-0024] AvrgPlaceInstArea:        5.630 um^2
+[INFO GPL-0025] IdealBinArea:            12.512 um^2
+[INFO GPL-0026] IdealBinCnt:                175
+[INFO GPL-0027] TotalBinArea:          2195.856 um^2
+[INFO GPL-0028] BinCnt:         8      8
+[INFO GPL-0029] BinSize: (  6.728  5.100 )
+[INFO GPL-0030] NumBins: 64
+[NesterovSolve] Iter:    1 overflow: 0.000 HPWL: 83124
+[INFO GPL-0100] Timing-driven: executing resizer for reweighting nets.
+[INFO GPL-0101] Timing-driven: worst slack 5.49e-09
+[INFO GPL-0103] Timing-driven: weighted 0 nets.
+[NesterovSolve] Snapshot saved at iter = 0
+[INFO GPL-0075] Routability numCall: 1 inflationIterCnt: 1 bloatIterCnt: 0
+[INFO GPL-0036] TileBBox: (    0    0 ) ( 6900 6900 ) DBU
+[INFO GPL-0038] TileCnt:       9    9
+[INFO GPL-0040] NumTiles: 81
+[INFO GPL-0081] TotalRouteOverflow: 0
+[INFO GPL-0082] OverflowTileCnt: 0
+[INFO GPL-0083] 0.5%RC: 0.45580920577049255
+[INFO GPL-0084] 1.0%RC: 0.45580920577049255
+[INFO GPL-0085] 2.0%RC: 0.45431970059871674
+[INFO GPL-0086] 5.0%RC: 0.44374831914901736
+[INFO GPL-0087] FinalRC: 0.4558092
+[INFO GPL-0077] FinalRC lower than targetRC(1.01), routability not needed.
+[NesterovSolve] Finished with Overflow: 0.000000
+[INFO] Setting RC values…
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                                30     112.61
+  Tap cell                                 34      42.54
+  Multi-Input combinational cell            2      11.26
+  Total                                    66     166.41
+Writing OpenROAD database to '/home/yaser/CMOS_Tapeouts/clb/runs/RUN_2026-06-01_14-01-11/27-openroad-globalplacement/clb.odb'…
+Writing netlist to '/home/yaser/CMOS_Tapeouts/clb/runs/RUN_2026-06-01_14-01-11/27-openroad-globalplacement/clb.nl.v'…
+Writing powered netlist to '/home/yaser/CMOS_Tapeouts/clb/runs/RUN_2026-06-01_14-01-11/27-openroad-globalplacement/clb.pnl.v'…
+Writing layout to '/home/yaser/CMOS_Tapeouts/clb/runs/RUN_2026-06-01_14-01-11/27-openroad-globalplacement/clb.def'…
+Writing timing constraints to '/home/yaser/CMOS_Tapeouts/clb/runs/RUN_2026-06-01_14-01-11/27-openroad-globalplacement/clb.sdc'…

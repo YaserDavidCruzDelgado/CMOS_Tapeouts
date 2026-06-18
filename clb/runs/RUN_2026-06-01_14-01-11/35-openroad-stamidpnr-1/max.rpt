@@ -1,0 +1,44 @@
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+======================= nom_tt_025C_1v80 Corner ===================================
+
+Startpoint: cin (input port clocked by clk)
+Endpoint: cout (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock network delay (propagated)
+                                  2.000000    2.000000 ^ input external delay
+     1    0.002672    0.019868    0.009845    2.009845 ^ cin (in)
+                                                         cin (net)
+                      0.019868    0.000000    2.009845 ^ input2/A (sky130_fd_sc_hd__clkbuf_1)
+     1    0.001799    0.034419    0.063607    2.073452 ^ input2/X (sky130_fd_sc_hd__clkbuf_1)
+                                                         net2 (net)
+                      0.034419    0.000002    2.073454 ^ _0_/B (sky130_fd_sc_hd__and2_1)
+     1    0.005122    0.065799    0.127858    2.201312 ^ _0_/X (sky130_fd_sc_hd__and2_1)
+                                                         net3 (net)
+                      0.065799    0.000061    2.201373 ^ output3/A (sky130_fd_sc_hd__buf_2)
+     1    0.034344    0.170529    0.206330    2.407703 ^ output3/X (sky130_fd_sc_hd__buf_2)
+                                                         cout (net)
+                      0.170529    0.000197    2.407900 ^ cout (out)
+                                              2.407900   data arrival time
+
+                                 10.000000   10.000000   clock clk (rise edge)
+                                  0.000000   10.000000   clock network delay (propagated)
+                                 -0.250000    9.750000   clock uncertainty
+                                  0.000000    9.750000   clock reconvergence pessimism
+                                 -2.000000    7.750000   output external delay
+                                              7.750000   data required time
+---------------------------------------------------------------------------------------------
+                                              7.750000   data required time
+                                             -2.407900   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.342100   slack (MET)
+
+
+

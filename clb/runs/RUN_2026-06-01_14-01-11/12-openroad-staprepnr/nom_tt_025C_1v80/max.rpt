@@ -1,0 +1,38 @@
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+======================= nom_tt_025C_1v80 Corner ===================================
+
+Startpoint: cin (input port clocked by clk)
+Endpoint: cout (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  2.000000    2.000000 v input external delay
+     1    0.001403    0.005610    0.002074    2.002074 v cin (in)
+                                                         cin (net)
+                      0.005610    0.000000    2.002074 v _0_/B (sky130_fd_sc_hd__and2_2)
+     1    0.033442    0.101858    0.243880    2.245955 v _0_/X (sky130_fd_sc_hd__and2_2)
+                                                         cout (net)
+                      0.101858    0.000000    2.245955 v cout (out)
+                                              2.245955   data arrival time
+
+                      0.150000   10.000000   10.000000   clock clk (rise edge)
+                                  0.000000   10.000000   clock network delay (ideal)
+                                 -0.250000    9.750000   clock uncertainty
+                                  0.000000    9.750000   clock reconvergence pessimism
+                                 -2.000000    7.750000   output external delay
+                                              7.750000   data required time
+---------------------------------------------------------------------------------------------
+                                              7.750000   data required time
+                                             -2.245955   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.504045   slack (MET)
+
+
+

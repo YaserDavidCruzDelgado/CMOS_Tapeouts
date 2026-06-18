@@ -1,0 +1,44 @@
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+======================= min_ff_n40C_1v95 Corner ===================================
+
+Startpoint: I[3] (input port clocked by clk)
+Endpoint: cout (output port clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock network delay (propagated)
+                                  2.000000    2.000000 v input external delay
+     2    0.003652    0.005980    0.003004    2.003004 v I[3] (in)
+                                                         I[3] (net)
+                      0.005980    0.000000    2.003004 v input1/A (sky130_fd_sc_hd__clkbuf_1)
+     1    0.002304    0.016615    0.045117    2.048121 v input1/X (sky130_fd_sc_hd__clkbuf_1)
+                                                         net1 (net)
+                      0.016615    0.000025    2.048146 v _0_/A (sky130_fd_sc_hd__and2_1)
+     1    0.006293    0.033591    0.089292    2.137438 v _0_/X (sky130_fd_sc_hd__and2_1)
+                                                         net3 (net)
+                      0.033591    0.000148    2.137586 v output3/A (sky130_fd_sc_hd__buf_2)
+     1    0.034319    0.062733    0.118947    2.256533 v output3/X (sky130_fd_sc_hd__buf_2)
+                                                         cout (net)
+                      0.062734    0.000357    2.256890 v cout (out)
+                                              2.256890   data arrival time
+
+                                  0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock network delay (propagated)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                 -2.000000   -1.750000   output external delay
+                                             -1.750000   data required time
+---------------------------------------------------------------------------------------------
+                                             -1.750000   data required time
+                                             -2.256890   data arrival time
+---------------------------------------------------------------------------------------------
+                                              4.006890   slack (MET)
+
+
+

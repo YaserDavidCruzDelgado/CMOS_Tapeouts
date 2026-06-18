@@ -1,0 +1,35 @@
+(DELAYFILE
+ (SDFVERSION "3.0")
+ (DESIGN "clb")
+ (DATE "Mon Jun  1 14:01:13 2026")
+ (VENDOR "Parallax")
+ (PROGRAM "STA")
+ (VERSION "2.6.0")
+ (DIVIDER .)
+ (VOLTAGE 1.950::1.950)
+ (PROCESS "1.000::1.000")
+ (TEMPERATURE -40.000::-40.000)
+ (TIMESCALE 1ns)
+ (CELL
+  (CELLTYPE "clb")
+  (INSTANCE)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT I[3] _0_.A (0.004:0.004:0.004) (0.001:0.001:0.001))
+    (INTERCONNECT cin _0_.B (0.004:0.004:0.004) (0.001:0.001:0.001))
+    (INTERCONNECT _0_.X cout (0.000:0.000:0.000))
+    (INTERCONNECT _1_.LO O (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sky130_fd_sc_hd__and2_2")
+  (INSTANCE _0_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.152:0.152:0.152) (0.144:0.144:0.144))
+    (IOPATH B X (0.155:0.155:0.155) (0.158:0.158:0.158))
+   )
+  )
+ )
+)

@@ -1,0 +1,20 @@
+113. Printing statistics.
+
+=== clb ===
+
+   Number of wires:                  7
+   Number of wire bits:             10
+   Number of public wires:           7
+   Number of public wire bits:      10
+   Number of ports:                  7
+   Number of port bits:             10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     sky130_fd_sc_hd__and2_2         1
+     sky130_fd_sc_hd__conb_1         1
+
+   Chip area for module '\clb': 11.260800
+     of which used for sequential elements: 0.000000 (0.00%)
+

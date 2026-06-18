@@ -1,0 +1,32 @@
+digraph "clb" {
+label="clb";
+rankdir="LR";
+remincross=true;
+n1 [ shape=octagon, label="I", color="black", fontcolor="black"];
+n2 [ shape=octagon, label="O", color="black", fontcolor="black"];
+n3 [ shape=octagon, label="cin", color="black", fontcolor="black"];
+n4 [ shape=octagon, label="clk", color="black", fontcolor="black"];
+n5 [ shape=octagon, label="cout", color="black", fontcolor="black"];
+n6 [ shape=octagon, label="ff_en", color="black", fontcolor="black"];
+n7 [ shape=diamond, label="ff_q", color="black", fontcolor="black"];
+n8 [ shape=diamond, label="lut_out", color="black", fontcolor="black"];
+n9 [ shape=octagon, label="rst", color="black", fontcolor="black"];
+c13 [ shape=record, label="{{<p10> A|<p11> B}|$194\n$_AND_|{<p12> Y}}",  ];
+x0 [ shape=record, style=rounded, label="<s0> 3:3 - 0:0 ", color="black", fontcolor="black" ];
+x0:e -> c13:p10:w [arrowhead=odiamond, arrowtail=odiamond, dir=both, color="black", fontcolor="black", label=""];
+v1 [ label="1'0" ];
+x2 [shape=point, ];
+v3 [ label="1'0" ];
+x4 [shape=point, ];
+v5 [ label="1'0" ];
+x6 [shape=point, ];
+n1:e -> x0:s0:w [color="black", fontcolor="black", label=""];
+x2:e -> n2:w [color="black", fontcolor="black", label=""];
+n3:e -> c13:p11:w [color="black", fontcolor="black", label=""];
+c13:p12:e -> n5:w [color="black", fontcolor="black", label=""];
+x4:e -> n7:w [color="black", fontcolor="black", label=""];
+x6:e -> n8:w [color="black", fontcolor="black", label=""];
+v1:e -> x2:w [color="black", fontcolor="black", label=""];
+v3:e -> x4:w [color="black", fontcolor="black", label=""];
+v5:e -> x6:w [color="black", fontcolor="black", label=""];
+}

@@ -1,0 +1,357 @@
+{
+  "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+  "modules": {
+    "clb": {
+      "attributes": {
+        "hdlname": "clb",
+        "top": "00000000000000000000000000000001",
+        "src": "/home/yaser/CMOS_Tapeouts/clb/src/clb.v:3.1-46.10"
+      },
+      "parameter_default_values": {
+        "INIT": "0000000000000000"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rst": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "ff_en": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "I": {
+          "direction": "input",
+          "bits": [ 5, 6, 7, 8 ]
+        },
+        "cin": {
+          "direction": "input",
+          "bits": [ 9 ]
+        },
+        "O": {
+          "direction": "output",
+          "bits": [ 10 ]
+        },
+        "cout": {
+          "direction": "output",
+          "bits": [ 11 ]
+        }
+      },
+      "cells": {
+        "$and$/home/yaser/CMOS_Tapeouts/clb/src/clb.v:44$4": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/clb/src/clb.v:44.20-44.33"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12 ],
+            "B": [ 9 ],
+            "Y": [ 13 ]
+          }
+        },
+        "$and$/home/yaser/CMOS_Tapeouts/clb/src/clb.v:44$5": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/clb/src/clb.v:44.38-44.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12 ],
+            "B": [ 8 ],
+            "Y": [ 14 ]
+          }
+        },
+        "$and$/home/yaser/CMOS_Tapeouts/clb/src/clb.v:44$7": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/clb/src/clb.v:44.57-44.67"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "B": [ 8 ],
+            "Y": [ 15 ]
+          }
+        },
+        "$or$/home/yaser/CMOS_Tapeouts/clb/src/clb.v:44$6": {
+          "hide_name": 1,
+          "type": "$or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/clb/src/clb.v:44.19-44.53"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 13 ],
+            "B": [ 14 ],
+            "Y": [ 16 ]
+          }
+        },
+        "$or$/home/yaser/CMOS_Tapeouts/clb/src/clb.v:44$8": {
+          "hide_name": 1,
+          "type": "$or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/clb/src/clb.v:44.19-44.68"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 16 ],
+            "B": [ 15 ],
+            "Y": [ 11 ]
+          }
+        },
+        "$procdff$12": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/clb/src/clb.v:26.5-31.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 17 ],
+            "Q": [ 18 ]
+          }
+        },
+        "$procmux$10": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/yaser/CMOS_Tapeouts/clb/src/clb.v:27.13-27.16|/home/yaser/CMOS_Tapeouts/clb/src/clb.v:27.9-30.29"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12 ],
+            "B": [ "0" ],
+            "S": [ 3 ],
+            "Y": [ 17 ]
+          }
+        },
+        "$shiftx$/home/yaser/CMOS_Tapeouts/clb/src/clb.v:0$1": {
+          "hide_name": 1,
+          "type": "$shiftx",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000010000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/clb/src/clb.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "B": [ 5, 6, 7, 8 ],
+            "Y": [ 12 ]
+          }
+        },
+        "$ternary$/home/yaser/CMOS_Tapeouts/clb/src/clb.v:36$3": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/clb/src/clb.v:36.16-36.38"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12 ],
+            "B": [ 18 ],
+            "S": [ 4 ],
+            "Y": [ 10 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\ff_q[0:0]": {
+          "hide_name": 1,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/clb/src/clb.v:26.5-31.8"
+          }
+        },
+        "$and$/home/yaser/CMOS_Tapeouts/clb/src/clb.v:44$4_Y": {
+          "hide_name": 1,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/clb/src/clb.v:44.20-44.33"
+          }
+        },
+        "$and$/home/yaser/CMOS_Tapeouts/clb/src/clb.v:44$5_Y": {
+          "hide_name": 1,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/clb/src/clb.v:44.38-44.52"
+          }
+        },
+        "$and$/home/yaser/CMOS_Tapeouts/clb/src/clb.v:44$7_Y": {
+          "hide_name": 1,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/clb/src/clb.v:44.57-44.67"
+          }
+        },
+        "$or$/home/yaser/CMOS_Tapeouts/clb/src/clb.v:44$6_Y": {
+          "hide_name": 1,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/clb/src/clb.v:44.19-44.53"
+          }
+        },
+        "I": {
+          "hide_name": 0,
+          "bits": [ 5, 6, 7, 8 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/clb/src/clb.v:11.23-11.24"
+          }
+        },
+        "O": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/clb/src/clb.v:13.23-13.24"
+          }
+        },
+        "cin": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/clb/src/clb.v:12.23-12.26"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/clb/src/clb.v:8.23-8.26"
+          }
+        },
+        "cout": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/clb/src/clb.v:14.23-14.27"
+          }
+        },
+        "ff_en": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/clb/src/clb.v:10.23-10.28"
+          }
+        },
+        "ff_q": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/clb/src/clb.v:25.9-25.13"
+          }
+        },
+        "lut_out": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/clb/src/clb.v:20.10-20.17"
+          }
+        },
+        "rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/yaser/CMOS_Tapeouts/clb/src/clb.v:9.23-9.26"
+          }
+        }
+      }
+    }
+  }
+}
