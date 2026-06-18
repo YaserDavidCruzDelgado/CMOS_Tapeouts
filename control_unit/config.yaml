@@ -1,0 +1,5 @@
+DESIGN_NAME: control_unit
+VERILOG_FILES:
+  - dir::src/control_unit.v
+CLOCK_PORT: clk
+CLOCK_PERIOD: 10.0

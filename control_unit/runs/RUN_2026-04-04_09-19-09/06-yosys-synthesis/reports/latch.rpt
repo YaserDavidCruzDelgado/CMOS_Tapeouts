@@ -1,0 +1,6 @@
+
+15. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\control_unit.\busy' from process `\control_unit.$proc$/home/yaser/CMOS_Tapeouts/control_unit/src/control_unit.v:53$3'.
+No latch inferred for signal `\control_unit.\done' from process `\control_unit.$proc$/home/yaser/CMOS_Tapeouts/control_unit/src/control_unit.v:53$3'.
+No latch inferred for signal `\control_unit.\state_out' from process `\control_unit.$proc$/home/yaser/CMOS_Tapeouts/control_unit/src/control_unit.v:53$3'.
+No latch inferred for signal `\control_unit.\next_state' from process `\control_unit.$proc$/home/yaser/CMOS_Tapeouts/control_unit/src/control_unit.v:27$2'.

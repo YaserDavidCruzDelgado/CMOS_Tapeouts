@@ -1,0 +1,30 @@
+94. Printing statistics.
+
+=== control_unit ===
+
+   Number of wires:                  9
+   Number of wire bits:             11
+   Number of public wires:           7
+   Number of public wire bits:       9
+   Number of ports:                  6
+   Number of port bits:              7
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $_ANDNOT_                       1
+     $_AND_                          1
+     $_DFF_PP0_                      2
+     $_MUX_                          1
+     $_NOR_                          1
+     $_OR_                           1
+     $_XOR_                          1
+
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_DFF_PP0_ is unknown!
+

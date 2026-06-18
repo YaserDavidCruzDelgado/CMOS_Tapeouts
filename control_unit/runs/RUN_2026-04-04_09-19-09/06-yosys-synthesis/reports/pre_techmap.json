@@ -1,0 +1,49 @@
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/yaser/CMOS_Tapeouts/control_unit/runs/RUN_2026-04-04_09-19-09/tmp/610431834ae848d28e136a0c33d43712.lib ",
+   "modules": {
+      "\\control_unit": {
+         "num_wires":         9,
+         "num_wire_bits":     11,
+         "num_pub_wires":     7,
+         "num_pub_wire_bits": 9,
+         "num_ports":         6,
+         "num_port_bits":     7,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         8,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 1,
+            "$_AND_": 1,
+            "$_DFF_PP0_": 2,
+            "$_MUX_": 1,
+            "$_NOR_": 1,
+            "$_OR_": 1,
+            "$_XOR_": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         9,
+         "num_wire_bits":     11,
+         "num_pub_wires":     7,
+         "num_pub_wire_bits": 9,
+         "num_ports":         6,
+         "num_port_bits":     7,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         8,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 1,
+            "$_AND_": 1,
+            "$_DFF_PP0_": 2,
+            "$_MUX_": 1,
+            "$_NOR_": 1,
+            "$_OR_": 1,
+            "$_XOR_": 1
+         }
+      }
+}
+

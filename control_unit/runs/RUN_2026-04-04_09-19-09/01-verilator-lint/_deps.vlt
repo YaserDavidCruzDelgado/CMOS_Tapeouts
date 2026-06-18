@@ -1,0 +1,5 @@
+`verilator_config
+lint_off -rule DECLFILENAME
+lint_off -rule EOFNEWLINE
+lint_off -rule UNDRIVEN -file "/home/yaser/CMOS_Tapeouts/control_unit/runs/RUN_2026-04-04_09-19-09/tmp/4433c8a6e3af4152b6243e0d25e31d7d.bb.v"
+lint_off -rule UNUSEDSIGNAL -file "/home/yaser/CMOS_Tapeouts/control_unit/runs/RUN_2026-04-04_09-19-09/tmp/4433c8a6e3af4152b6243e0d25e31d7d.bb.v"
