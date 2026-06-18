@@ -1,0 +1,18 @@
+DESIGN_NAME: counter
+
+VERILOG_FILES:
+  - src/counter.v
+
+CLOCK_PORT: clk
+CLOCK_PERIOD: 10.0
+
+FP_CORE_UTIL: 20
+PL_TARGET_DENSITY: 0.5
+
+RUN_CTS: true
+
+PDK: sky130A
+STD_CELL_LIBRARY: sky130_fd_sc_hd
+
+# Opcional pero ayuda a evitar problemas iniciales
+SYNTH_STRATEGY: AREA 0
